@@ -1,0 +1,4 @@
+  environment: ${file(config/environments/${opt:stage, 'sandbox'}.yml)}
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true

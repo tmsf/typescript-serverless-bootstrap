@@ -1,0 +1,78 @@
+{
+  "name": "typescript-serverless-bootstrap",
+  "version": "1.0.0",
+  "author": "HealthBridge Ltd",
+  "license": "ISC",
+  "description": "Bootstrap repository for serverless projects using TypeScript",
+  "engineStrict": true,
+  "engines": {
+    "node": "^10"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error"
+    }
+  },
+  "standardx": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "<rootDir>/test-results"
+        }
+      ]
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/test-results/coverage",
+    "collectCoverageFrom": [
+      "src/**",
+      "!**/*.test.(ts|tsx|js)"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|tsx|js)",
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)?$": "ts-jest"
+    }
+  },
+  "scripts": {
+    "lint": "standardx **/*.ts --env jest | standard-reporter --stylish",
+    "lint:fix": "standardx **/*.ts --env jest --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.35",
+    "@types/jest": "24.0.22",
+    "@types/node": "12.12.7",
+    "@typescript-eslint/eslint-plugin": "2.6.1",
+    "@typescript-eslint/parser": "2.6.1",
+    "jest": "24.9.0",
+    "jest-junit": "9.0.0",
+    "serverless": "1.57.0",
+    "serverless-pseudo-parameters": "2.5.0",
+    "serverless-webpack": "5.3.1",
+    "standard-reporter": "1.0.5",
+    "standardx": "5.0.0",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.2",
+    "webpack": "4.41.2",
+    "webpack-node-externals": "1.7.2"
+  },
+  "dependencies": {
+    "source-map-support": "0.5.16"
+  }
+}
