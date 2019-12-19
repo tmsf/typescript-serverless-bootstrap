@@ -73,6 +73,7 @@
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
+    "middy": "0.33.0",
     "source-map-support": "0.5.16"
   }
 }

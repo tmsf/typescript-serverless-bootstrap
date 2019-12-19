@@ -1,8 +1,8 @@
-import { handler } from './hello'
+import { hello } from './hello'
 
 describe('Complete Checkout Function', () => {
   it('should return dummy message', async () => {
-    const response = await handler()
+    const response = await hello()
     const body = JSON.parse(response.body)
 
     expect(response.statusCode).toBe(200)
