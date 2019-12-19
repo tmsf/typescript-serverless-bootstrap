@@ -20,33 +20,6 @@
       "@typescript-eslint/eslint-plugin"
     ]
   },
-  "jest": {
-    "reporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": "<rootDir>/test-results"
-        }
-      ]
-    ],
-    "collectCoverage": true,
-    "coverageDirectory": "<rootDir>/test-results/coverage",
-    "collectCoverageFrom": [
-      "src/**",
-      "!**/*.test.(ts|tsx|js)"
-    ],
-    "roots": [
-      "<rootDir>/src"
-    ],
-    "testMatch": [
-      "**/__tests__/**/*.+(ts|tsx|js)",
-      "**/?(*.)+(spec|test).+(ts|tsx|js)"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)?$": "ts-jest"
-    }
-  },
   "scripts": {
     "lint": "standardx **/*.ts --env jest | standard-reporter --stylish",
     "lint:fix": "standardx **/*.ts --env jest --fix",
