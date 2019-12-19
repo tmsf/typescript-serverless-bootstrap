@@ -23,7 +23,7 @@
   "scripts": {
     "lint": "standardx **/*.ts --env jest | standard-reporter --stylish",
     "lint:fix": "standardx **/*.ts --env jest --fix",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
