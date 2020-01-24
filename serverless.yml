@@ -8,6 +8,7 @@ custom:
   ${file(config/custom.yml)}
 
 plugins:
+  - serverless-newrelic-lambda-layers
   - serverless-pseudo-parameters
   - serverless-webpack
 
