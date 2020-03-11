@@ -23,3 +23,8 @@ yarn-error.log*
 
 # Reports
 test-results/
+
+.idea
+/dist/
+
+**/*/.DS_Store
