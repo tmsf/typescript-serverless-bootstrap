@@ -17,6 +17,6 @@ module.exports = {
   coverageDirectory: 'test-results',
   reporters: ['default'],
   moduleNameMapper: {
-    '~/(.*)$': '<rootDir>/src/$1'
+    '@/(.*)$': '<rootDir>/src/$1'
   }
 }

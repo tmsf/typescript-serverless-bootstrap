@@ -1,4 +1,4 @@
-import { hello } from '~/handlers/hello'
+import { hello } from '@/handlers/hello'
 
 describe('Complete Checkout Function', () => {
   it('should return dummy message', async () => {

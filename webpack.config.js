@@ -39,7 +39,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx'],
     alias: {
-      '~': path.join(__dirname, 'src')
+      '@': path.join(__dirname, 'src')
     }
   }
 }
