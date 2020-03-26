@@ -10,10 +10,13 @@ module.exports = {
   testEnvironment: 'node',
   verbose: true,
   collectCoverageFrom: [
-    "src/**",
-    "!src/@types/**",
-    "!**/*.spec.ts"
+    'src/**',
+    '!src/@types/**',
+    '!**/*.spec.ts'
   ],
   coverageDirectory: 'test-results',
-  reporters: ['default']
+  reporters: ['default'],
+  moduleNameMapper: {
+    '@/(.*)$': '<rootDir>/src/$1'
+  }
 }
