@@ -26,6 +26,12 @@ npm install
 npx sls deploy
 ```
 
+### Documentation
+
+```
+npm run docs
+```
+
 ## Contributing to this project
 
 [Check contributing guidelines](./contributing.md)
