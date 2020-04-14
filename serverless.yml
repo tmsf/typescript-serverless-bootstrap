@@ -24,5 +24,4 @@ functions:
   - ${file(config/functions/hello.yml)}
 
 resources:
-  - ${file(config/resources/common.yml)}
   - ${file(config/resources/api-gateway.yml)}
