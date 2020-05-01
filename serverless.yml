@@ -8,10 +8,10 @@ custom:
   ${file(config/custom.yml)}
 
 plugins:
-  - serverless-newrelic-lambda-layers
   - serverless-pseudo-parameters
   - serverless-webpack
-
+  - serverless-newrelic-lambda-layers
+  
 provider:
   name: aws
   runtime: nodejs12.x
